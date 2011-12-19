@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Computer | Digital Adventures]]></title>
+  <link href="http://digital-adventures.github.com/blog/categories/computer/atom.xml" rel="self"/>
+  <link href="http://digital-adventures.github.com/"/>
+  <updated>2011-12-19T15:49:40+01:00</updated>
+  <id>http://digital-adventures.github.com/</id>
+  <author>
+    <name><![CDATA[Joakim Reinert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ein preiswerter Heimkino-PC]]></title>
+    <link href="http://digital-adventures.github.com/blog/2011/08/30/ein-preiswerter-heimkino-pc/"/>
+    <updated>2011-08-30T00:00:00+02:00</updated>
+    <id>http://digital-adventures.github.com/blog/2011/08/30/ein-preiswerter-heimkino-pc</id>
+    <content type="html"><![CDATA[<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2146-e1316854561287.jpg"><img class="size-large wp-image-300  " title="HTPC" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2146-e1316854561287-1024x321.jpg" alt="Vorderansicht des Antec Fusion Remote Gehäuses" width="573" height="180"></a></p>
+
+<p>Ich habe inzwischen zwei HTPC:s (home theater PC) mit den gleichen Komponenten zusammengebaut und bin dermaßen überzeugt von denen, dass ich dachte sie hier mal kurz vorzustellen.</p>
+
+<p>Ein HTPC sollte kompakt, leise und schick sein. Sonst würde man einen ungern im Wohnzimmer aufstellen. Für mich war ein niedriger Stromverbrauch auch sehr wichtig, denn ich nutze den PC auch als Mediaserver.</p>
+
+<!-- more -->
+
+
+<p>Energieeffizient und preiswert sind vor allem AMD:s Athlon Dualcore CPU:s und zwar die mit einem 'e' hinter der Typnummer. So habe ich mich für den <a title="AMD Athlon II X2 240e, 2x 2.80GHz" href="http://geizhals.at/473514" target="_blank">AMD Athlon II X2 240e, 2x 2.80GHz</a> entschieden. Die CPU soll laut Hersteller gerade mal 45 Watt ziehen. Die Energieeffizienz bringt noch einen zweiten Vorteil: Durch geringere Wärmeentwicklung ist die CPU einfacher und somit leiser zu kühlen. Dazu aber später mehr.</p>
+
+<p>Die CPU passt auf Motherboards mit AM3 Sockel. So bin ich auf das <a title="ASUS M4A78LT-M, 760G" href="http://geizhals.at/495831" target="_blank">ASUS M4A78LT-M, 760G</a> gestoßen. Auch das Motherboard wirbt mit Energieeffizienz, bringt 7.1 surround sound und was sehr nett ist, einen optischen SPDIF Soundanschluss. Erwähnenswert ist auch der sogenannte "Express Gate". Das ist eine Funktion des Motherboards, die es ermöglicht noch vor dem Booten ein "Miniaturbetriebssystem" zu laden und dadurch innerhalb von 40 Sekunden ab dem Einschalten auf Internet, Email und Skype zuzugreifen.</p>
+
+<p>Die Stromsparlinie wollte ich auch bei der Festplatte fortsetzen und habe mich deshalb für die <a title="Samsung EcoGreen F4 2000GB" href="http://geizhals.at/567146" target="_blank">Samsung EcoGreen F4 2000GB</a> entschieden. Die Platte ist relativ schnell für ihre 5400 umdrehungen und bietet genügend Platz für über hundert unkomprimierte Blu-Ray Filme.</p>
+
+<p>Als Arbeitsspeicher dienen die preiswerten <a title="G.Skill DIMM Kit 4GB PC3-10667U" href="http://geizhals.at/424104" target="_blank">G.Skill DIMM Kit 4GB PC3-10667U</a>, die auch ohne Probleme mit dem Board und der CPU zusammenarbeiten.</p>
+
+<p>Ein praktisch unhörbares hochwertiges Netzteil bekommt man schon für unter 30€: <a title="be quiet! System Power 80Plus 300W ATX 2.2" href="http://geizhals.at/394506" target="_blank">be quiet! System Power 80Plus 300W ATX 2.2</a>. Mit seinen 300 Watt kommt es locker mit dem System zurecht und hat auch keine Probleme gehabt, nachdem ich mit einer Grafikkarte nachgerüstet habe.</p>
+
+<p>In einem HTPC sollte heutzutage kein Blu-Ray laufwerk fehlen. Ein brenner ist auch immer praktisch und da hat sich der <a title="LG Electronics BH10LS30 schwarz" href="http://geizhals.at/503251" target="_blank">LG Electronics BH10LS30 schwarz</a> angeboten. Ließt und brennt eigentlich alles.</p>
+
+<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2149.jpg"><img class="size-medium wp-image-301" title="HTPC Innen" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2149-300x225.jpg" alt="Innenansicht des Antec Fusion Remote Gehäuses" width="300" height="225"></a></p>
+
+<p>Beim Gehäuse war mir wie gesagt Optik sehr wichtig. Der <a title="Antec Fusion Remote" href="http://geizhals.at/363016" target="_blank">Antec Fusion Remote</a> überzeugt auf der ganzen Linie. Das edle Gehäuse mit dicker Aluminiumblende gibt es auch in silber. Auch ein Blick unter die Haube zeigt: Hier hat man sich Gedanken gemacht. Die Kabelführung ist perfekt. Das Gehäuse ist in Kammern aufgeteilt um optimale Luftzirkulation zu gewährleisten. Ist der PC erst einmal zusammengebaut, wird man in der Kammer mit dem Motherboard sogut wie keine Kabel sehen, die sonst Wärmestaus hervorruffen können. Besonders in solchen kompakten Gehäusen ist gutes Kabelmanagement sehr wichtig.</p>
+
+<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2150.jpg"><img class="size-medium wp-image-303" title="5.25'' Laufwerkschacht" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2150-300x225.jpg" alt="5.25'' Laufwerkschacht" width="300" height="225"></a></p>
+
+<p>Nur die mitgelieferten Lüfter überzeugen nicht so ganz, doch bei einem Gehäuse dieser höhe sind 120mm Lüfter überhaupt eine Seltenheit. Die Abmessungen des Gehäuses sind übrigens exakt an standard HIFI-Racks angepasst. Viele erkennen garnicht, dass es sich hier um einen PC handelt. Dazu kommt der Antec Fusion Remote mit einer Fernbedienung und LC-Display. So kann man beim Musik hören den Fernseher ausgeschaltet lassen.</p>
+
+<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2151.jpg"><img class="size-medium wp-image-302" title="SilverStone Nitrogon NT01-E Evolution" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2151-300x225.jpg" alt="SilverStone Nitrogon NT01-E Evolution" width="300" height="225"></a></p>
+
+<p>Die CPU lässt sich aufgrund der geringen Wärmeverluste (semi)passiv kühlen. Dabei ist jedoch die geringe Höhe des Gehäuses zu beachten. Der <a title="SilverStone Nitrogon NT01-E Evolution" href="http://geizhals.at/401684" target="_blank">SilverStone Nitrogon NT01-E Evolution</a> überzeugt mit guter Wärmeabfuhr und passt noch gerade unter die Haube.</p>
+
+<p>Um den PC möglichst lautlos zu machen habe ich die Festplatte in einen <a title="Sharkoon HDD Vibe-Fixer" href="http://geizhals.at/108251" target="_blank">Sharkoon HDD Vibe-Fixer</a> eingebaut und die beiden beim Gehäuse mitgelieferten 120mm Lüfter in zwei <a title="be quiet! Silent Wings PWM, 120x120x25mm" href="http://geizhals.at/475660" target="_blank">be quiet! Silent Wings PWM, 120x120x25mm</a> gewechselt. Hierbei ist zu beachten, dass das Motherboard nur über einen regelbaren PWM Anschluss (den CPU-Fan-Anschluss) verfügt. Deshalb muss ein 4 pin PWM Y-Kabel her. Der CPU-Fan-Anschluss bringt auch genügend Leistung um die beiden Lüfter zu versorgen. Für silent-freaks will ich noch die Software <a title="SpeedFan" href="http://www.almico.com/speedfan.php" target="_blank">SpeedFan</a> empfehlen, über die ich evt. noch einen Beitrag schreiben werde.</p>
+
+<p>Alles in allem hat man mit diesen Komponenten einen guten, leisen, sparsamen und schicken HTPC zusammen. Im leerlauf verbraucht der PC laut Stromzähler nur 10 Watt. Das ist wirklich beachtlich. Der im Motherboard integrierte Grafikchip spielt auch HD-Inhalte ruckelfrei ab doch wer auch ein bisschen zocken möchte, muss zu einer zusätzlichen Grafikkarte greifen.</p>
+
+<p><a title="Wunschliste" href="http://geizhals.at/deutschland/?cat=WL-144976" target="_blank">Hier noch alle Komponenten in einer Geizhals Wunschliste zusammengefasst.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GrooveLoader - Kostenlos Musik hören und downloaden]]></title>
+    <link href="http://digital-adventures.github.com/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden/"/>
+    <updated>2011-05-18T00:00:00+02:00</updated>
+    <id>http://digital-adventures.github.com/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden</id>
+    <content type="html"><![CDATA[<p><a href="http://digital-adventures.de/blog/wp-content/uploads/GrooveLoader-Screenshot.png"><img src="http://digital-adventures.de/blog/wp-content/uploads/GrooveLoader-Screenshot-300x149.png" alt="GrooveLoader-Screenshot" title="Screenshot" width="300" height="149" class="size-medium wp-image-400"></a></p>
+
+<p>Jeder kennt das: Es kommt einem ein vielleicht schon lange in Vergessenheit geratener Song in den Sinn und man hat plötzlich Lust diesen Song zu hören.</p>
+
+<p>Selten geht man wegen so einem Gefühl in den Plattenladen und kauft sich das ganze Album. Wenn man Glück hat, ist der Song sogar in der heimischen Musikbibliothek vorhanden. Doch was, wenn nicht? Abhilfe schafft GrooveShark™.</p>
+
+<p>Dieser Internetdienst bietet eine riesige Musikbibliothek zum anhören an. Und zwar kostenlos. Man kann sich das wie ein Internetradio vorstellen wo man jeden Song selbst auswählen kann, ohne Werbespots.</p>
+
+<p>Das Downloaden von Songs ist auf der Seite von GrooveShark™ natürlich nicht möglich und wird in den AGB:s auch untersagt. Dass es trotzdem geht, zeigt der GrooveLoader. Dieses Programm habe ich eher als "proof of concept" (Nachweis der Machbarkeit) geschrieben <strong>und bin strikt gegen eine womöglich illegale Nutzung des Programmes. Ich kann als Autor nicht für Nutzer dieses Programmes haften.</strong></p>
+
+<!-- more -->
+
+
+<p>Der GrooveLoader ist ein Javaprogramm und funktioniert auf jedem gängigen Betriebssystem mit installierter Java Virtual Machine. Mit dem GrooveLoader lässt sich nach Musik suchen, diese Abspielen und mitschneiden. Dh. ein oder mehrere Songs werden auf der Festplatte des Nutzers gespeichert. Das Speichern von Songs verstößt gegen die AGB:s von GrooveShark™ und ich trage nicht die Konsequenzen, die möglicherweise durch das Mitschneiden von Songs entstehen. Nach außen hin ist jedoch nicht sichtbar, ob der Nutzer sich einen Song anhört, oder mitschneidet.</p>
+
+<p><strong>Es wird kein Kopierschutz gebrochen</strong> und es handelt sich effektiv um das Mitschneiden von Audiostreams. Das Speichern von diesen Mitschnitten ist dann legal, wenn der Nutzer das Orginal, und GrooveShark™ die Lizenz für das Musikstück besitzt. Es gilt dann als Sicherheitskopie.</p>
+
+<p>Ich entwickle das Programm aktiv weiter, werde die Entwicklung und Verbreitung jedoch bei einer für mich als Entwickler des Programms ungünstigen Änderung der Rechtslage bzw. sobald ich solch eine feststelle einstellen.</p>
+
+<p>Oben genannte Informationen sind nach bestem Wissen und Gewissen aufgeführt.
+ </p>
+
+<h3>Endbenutzer-Lizenzvertrag:</h3>
+
+
+<p> </p>
+
+<p><strong>Das Verbreiten des Programmes ist nur über Verlinkung zu dieser oder der <a title="GrooveLoader - Listen to and download songs for free" href="http://jokke.bplaced.net/2011/05/grooveloader-kostenlos-musik-horen-und-downloaden/?lang=en">entsprechenden englischen Webseite</a> erlaubt</strong>. Wer Kopien des Programmes ohne meine ausdrückliche Erlaubnis auf eine andere Art und Weise verbreitet, hat mit entsprechenden rechtlichen Konsequenzen zu rechnen.</p>
+
+<p>Ich stelle GrooveLoader als Shareware zur verfügung. Folgendes ist zu beachten: Jeder der die Software herunterlädt kann sie unbegrenzt lange benutzen (Änderungen vorbehalten) mit zwei Einschränkungen:</p>
+
+<ol>
+<li><p>Ab und zu erscheint beim starten des Programmes ein Fenster, wo der Benutzer gebeten wird einen beliebigen Betrag zu Spenden um den GrooveLoader mit vollem Funktionsumfang nutzen zu können. Dieses Fenster kann für 30 sekunden nicht geschlossen werden und erst nach den 30 sekunden startet das eigentliche Programm.</p></li>
+<li><p>Es ist nur möglich einen Song auf einmal zu downloaden.</p></li>
+</ol>
+
+
+<p>Wer von diesen Einschränkungen befreit werden will, muss einen beliebigen Betrag (so viel, wie einem das Programm wert ist) spenden. Entweder über den Spenden Button weiter unten oder im Programm selbst. Ist die Spende eingegangen, bekommt der Benutzer einen Lizenzschlüssel an die von Paypal angezeigte Emailadresse gesandt. Mit diesem Schlüssel, dem Vor- und Nachnamen und der Emailadresse lässt sich der volle Funktionsumfang von GrooveLoader freischalten.</p>
+
+<p>Achtung:
+Die Lizenzen sind personenbezogen, dh. sie dürfen und durften nicht weiterverbreitet werden. Wer dies trotzdem tut, muss mit der deaktivierung seiner/ihrer Lizenz rechnen.</p>
+
+<p>Ende des Endnutzer-Lizenzvertrages</p>
+
+<p>Bedanken möchte ich mich an dieser Stelle besonders bei <a href="http://www.scilor.com/">SciLor</a>, der die API für GrooveShark™ freundlicherweise zu Verfügung gestellt hat.</p>
+
+<p><strong>NOTICE:</strong></p>
+
+<p>This product includes software developed by The Apache Software Foundation (<a href="http://www.apache.org/">http://www.apache.org/</a>).</p>
+
+<p>It consists of voluntary contributions made by many individuals on behalf of the Apache Software Foundation. Please visit the project homepage (<a href="http://jakarta.apache.org/regexp">http://jakarta.apache.org/regexp</a>) for more information.</p>
+
+<p><a href="http://digital-adventures.de/files/GrooveLoader/download.html">Der Link zum Download befindet sich hier</a>. Laden Sie die Software bitte nur herunter, wenn Sie oben genanntes zur Kenntniss genommen und akzeptiert haben.</p>
+
+<p>Wem die Software gefällt, kann mir gerne ein Bier ausgeben und dafür GrooveLoader mit vollem Funktionsumfang benutzen!</p>
+
+<p><form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" type="hidden" value="_s-xclick"><input name="hosted_button_id" type="hidden" value="YDVDERASD93QA"><input alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." name="submit" src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/de_DE/DE/i/btn/btn_donateCC_LG.gif" type="image"><img src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/de_DE/i/scr/pixel.gif" border="0" alt="" width="1" height="1">
+</form></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cooler Videoplayer]]></title>
+    <link href="http://digital-adventures.github.com/blog/2011/04/05/cooler-videoplayer/"/>
+    <updated>2011-04-05T00:00:00+02:00</updated>
+    <id>http://digital-adventures.github.com/blog/2011/04/05/cooler-videoplayer</id>
+    <content type="html"><![CDATA[<p>Sehr nützlich bei z.B. Videoüberwachungen, um nicht minutenlang zu spulen um den relevanten Ausschnitt zu finden.</p>
+
+<p><a href="http://www.snotr.com/video/1213/Interesting_new_video_player">Interesting new video player</a>
+Quelle: snotr.com<!--:--></p>
+]]></content>
+  </entry>
+  
+</feed>

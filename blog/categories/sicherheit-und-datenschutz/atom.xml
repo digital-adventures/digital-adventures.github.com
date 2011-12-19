@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Digital Adventures]]></title>
-  <link href="http://digital-adventures.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Sicherheit und Datenschutz | Digital Adventures]]></title>
+  <link href="http://digital-adventures.github.com/blog/categories/sicherheit-und-datenschutz/atom.xml" rel="self"/>
   <link href="http://digital-adventures.github.com/"/>
   <updated>2011-12-19T15:49:40+01:00</updated>
   <id>http://digital-adventures.github.com/</id>
@@ -29,13 +29,13 @@
 
 <p>Erst vor kurzem ist mir zu Ohren gekommen, dass Evolution (der standard Email-Client in Gnome, also u.a. auch in Ubuntu) PGP von Haus aus unterstützt. Bis jetzt war ich ein nutzer von Mozillas Thunderbird in Kombination mit dem Add-On Enigmail.</p>
 
-<p>Evolution ist aber, da es ein standard Bestandteil von Gnome ist, sehr gut integriert: Ein Klick auf die Uhr öffnet einen kleinen Kalender, wo alle in Evolution eingetragenen Termine zu sehen sind. In Ubuntu wird unter dem &#8220;Briefumschlagmenü&#8221; eine Übersicht der eingegangenen E-Mails angezeigt und so weiter.</p>
+<p>Evolution ist aber, da es ein standard Bestandteil von Gnome ist, sehr gut integriert: Ein Klick auf die Uhr öffnet einen kleinen Kalender, wo alle in Evolution eingetragenen Termine zu sehen sind. In Ubuntu wird unter dem "Briefumschlagmenü" eine Übersicht der eingegangenen E-Mails angezeigt und so weiter.</p>
 
-<p>Deshalb habe ich mir gedacht, ich gebe Evolution mal eine Chance. Die Einrichtung ist natürlich kinderleicht und PGP ist auch in wenigen Klicks eingerichtet. Dazu geht man auf Bearbeiten -> Einstellungen -> E-Mail-Konten, wählt das gewünschte Konto aus und klickt rechts auf Bearbeiten. Unter dem Reiter Sicherheit trägt man dann die Key-ID seines Schlüssels ein. Und das war&#8217;s auch schon. Um nun Nachrichten zu verschlüsseln, oder zu signieren, klickt man im &#8220;Nachricht verfasen&#8221;-Fenster auf Optionen und wählt dort die gewünschten Aktionen aus.</p>
+<p>Deshalb habe ich mir gedacht, ich gebe Evolution mal eine Chance. Die Einrichtung ist natürlich kinderleicht und PGP ist auch in wenigen Klicks eingerichtet. Dazu geht man auf Bearbeiten -> Einstellungen -> E-Mail-Konten, wählt das gewünschte Konto aus und klickt rechts auf Bearbeiten. Unter dem Reiter Sicherheit trägt man dann die Key-ID seines Schlüssels ein. Und das war's auch schon. Um nun Nachrichten zu verschlüsseln, oder zu signieren, klickt man im "Nachricht verfasen"-Fenster auf Optionen und wählt dort die gewünschten Aktionen aus.</p>
 
 <p>Kinderleichte Einrichtungen haben aber meistens den Nachteil, dass einem genaueres Einstellen schwer, oder sogar unmöglich gemacht werden. Zu dieser Erkenntniss bin ich wieder mal gekommen, als ich dann eine E-Mail an meinen Bloggerkollegen Max verschlüsseln und schicken wollte.</p>
 
-<p>Es begrüßte mich die Fehlermeldung: &#8220;Öffentlicher Schlüssel wurde nicht gefunden&#8221;. Den Schlüssel hatte ich aber. Das Problem war jedoch, dass Max mehrere E-Mailadressen benutzt, aber eben nur eine in seinem Schlüssel eingetragen hat und ich die E-Mail an eine der anderen Adressen abschicken wollte.</p>
+<p>Es begrüßte mich die Fehlermeldung: "Öffentlicher Schlüssel wurde nicht gefunden". Den Schlüssel hatte ich aber. Das Problem war jedoch, dass Max mehrere E-Mailadressen benutzt, aber eben nur eine in seinem Schlüssel eingetragen hat und ich die E-Mail an eine der anderen Adressen abschicken wollte.</p>
 
 <p>Man würde denken, dass es möglich wäre, so wie bei Enigmail zum Beispiel, bestimmten E-Mailadressen bestimmte Schlüssel zuzuweisen. Fehlanzeige. Nachdem ich einige Zeit recherchiert habe, fand ich heraus, dass es möglich ist mehrere Nutzer für seinen Schlüssel einzutragen. Diese können dann auch eine andere E-Mail Adresse eintragen. Ist der Nutzer eingetragen, hat Evolution beziehungsweise gnuPG auch kein Problem mehr für die neue E-Mailadresse den richtigen öffentlichen Schlüssel zu finden.</p>
 
@@ -65,7 +65,7 @@ Und bestätigt, dass man die Änderungen speichern will.</p>
 
 <p>Die Datenschutzrichtlinien in den USA sind leider nicht so streng wie in Deutschland und als amerikanisches Unternehmen richtet sich Google an diese. Deshalb ist Analytics schon länger ein Dorn im Auge der Deutschen Datenschutzbeauftragten gewesen.</p>
 
-<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu &#8220;Personenbezogenen Daten&#8221;, denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
+<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu "Personenbezogenen Daten", denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
 
 <p>Glücklicherweise ist Google vor kurzem auf die Forderungen der Deutschen Datenschutzbeauftragten eingegangen und hat es möglich gemacht Analytics zu nutzen ohne auf Datenschutz zu verzichten.</p>
 
@@ -74,7 +74,7 @@ Und bestätigt, dass man die Änderungen speichern will.</p>
 
 <p>Nun ist es nämlich möglich die IP-Adressen der Nutzer zu maskieren. Das heißt das letze Byte der Adresse wird unkenntlich gemacht, also wird aus <code>207.142.131.235</code> z.B. so etwas wie <code>207.142.131.xxx</code>. Damit sind Nutzer nicht mehr identifizierbar. Das Maskieren ist aber standardmäßig <strong>nicht aktiviert</strong> und muss vom Webmaster selbst in den Analytics Code eingebaut werden. Das heißt auf allen Seiten, wo der Code vorkommt muss dieser um eine Funktion erweitert werden.</p>
 
-<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den &#8220;herkömmlichen&#8221; code:</p>
+<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den "herkömmlichen" code:</p>
 
 <pre>&lt;script type="text/javascript"&gt;
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -90,7 +90,7 @@ Und bestätigt, dass man die Änderungen speichern will.</p>
 
 <p>Hier ist die Funktion in Zeile 7.</p>
 
-<p>Und es gibt den neuen &#8220;asynchronen&#8221; code:</p>
+<p>Und es gibt den neuen "asynchronen" code:</p>
 
 <pre>&lt;script type="text/javascript"&gt;
     var _gaq = _gaq || [];
@@ -106,18 +106,18 @@ Und bestätigt, dass man die Änderungen speichern will.</p>
 &lt;/script&gt;</pre>
 
 
-<p>Hier ist die Funktion in Zeile 4 und wie man sieht, unterscheidet sich der Funktionsaufruf von dem des &#8220;herkömmlichen&#8221; Tracking Codes.</p>
+<p>Hier ist die Funktion in Zeile 4 und wie man sieht, unterscheidet sich der Funktionsaufruf von dem des "herkömmlichen" Tracking Codes.</p>
 
 <p>Wer schon vor der IP-Maskierung Analytics genutzt hat, muss die gesammelten Daten löschen. Das geht laut Google nur, indem man das entsprechende Analytics Konto löscht. Hier ist eine Kurzanleitung dazu:</p>
 
 <blockquote>Entfernen Sie vor dem Löschen das Snippet des JavaScript-Codes von Ihren Seiten.
 
-Wählen Sie zum Löschen des Kontos zunächst aus dem Dropdown-Menü &#8220;Mein Analytics-Konto&#8221;, das oben auf jeder Seite in Google Analytics angezeigt wird, das Konto aus. Navigieren Sie anschließend zur Seite Konto- und Datenfreigabeeinstellungen bearbeiten und klicken Sie zum Beenden des Vorgangs auf &#8220;Konto löschen&#8221;</blockquote>
+Wählen Sie zum Löschen des Kontos zunächst aus dem Dropdown-Menü "Mein Analytics-Konto", das oben auf jeder Seite in Google Analytics angezeigt wird, das Konto aus. Navigieren Sie anschließend zur Seite Konto- und Datenfreigabeeinstellungen bearbeiten und klicken Sie zum Beenden des Vorgangs auf "Konto löschen"</blockquote>
 
 
 <p>Quelle: <a title="http://www.google.com/support/analytics/bin/answer.py?hl=de&answer=55551" href="http://www.google.com/support/analytics/bin/answer.py?hl=de&answer=55551" target="_blank">http://www.google.com/support/analytics/bin/answer.py?hl=de&amp;answer=55551</a></p>
 
-<p>Zusätzlich muss folgendes Formular ausgefüllt und mit einem frankierten Rücksendeumschlag an Google in Hamburg geschickt werden. <a title="Vertrag zur Auftragsdatenverwaltung" href="www.google.de/intl/de/analytics/tos.pdf" target="_blank">Hier der Link zum Formular</a>. Bei dem Formular handelt es sich um einen sogenannten &#8220;Vertrag zur Auftragsdatenverwaltung&#8221;. Dieser Vertrag ist nötig, denn immer wenn ein Webseitenbetreiber personenbezogene Daten an Dritte (in diesem Fall Google Analytics) überlässt, müssen die Nutzer der Webseite dem zugestimmt haben. Es sei denn, man hat einen &#8220;Vertrag zur Auftragsdatenverwaltung&#8221; mit dem Empfänger der Daten (in diesem Fall wieder Google Analytics) abgeschlossen. Dann braucht man keine Einwilligung. In dem Vertrag ist u.a. erklärt, wie die Daten der Nutzer gesichert werden.</p>
+<p>Zusätzlich muss folgendes Formular ausgefüllt und mit einem frankierten Rücksendeumschlag an Google in Hamburg geschickt werden. <a title="Vertrag zur Auftragsdatenverwaltung" href="www.google.de/intl/de/analytics/tos.pdf" target="_blank">Hier der Link zum Formular</a>. Bei dem Formular handelt es sich um einen sogenannten "Vertrag zur Auftragsdatenverwaltung". Dieser Vertrag ist nötig, denn immer wenn ein Webseitenbetreiber personenbezogene Daten an Dritte (in diesem Fall Google Analytics) überlässt, müssen die Nutzer der Webseite dem zugestimmt haben. Es sei denn, man hat einen "Vertrag zur Auftragsdatenverwaltung" mit dem Empfänger der Daten (in diesem Fall wieder Google Analytics) abgeschlossen. Dann braucht man keine Einwilligung. In dem Vertrag ist u.a. erklärt, wie die Daten der Nutzer gesichert werden.</p>
 
 <p>Man braucht zwar keine Einwilligung, doch die Nutzer müssen über Zweck, Art und Umfang der Datenerhebung informiert werden. Dies geschieht zum Beispiel über eine Datenschutzerklärung, wie sie in meinem <a title="Impressum" href="http://digital-adventures.de/blog/impressum/" target="_blank">Impressum</a> zu sehen ist.</p>
 
@@ -129,7 +129,7 @@ Wählen Sie zum Löschen des Kontos zunächst aus dem Dropdown-Menü &#8220;Mein
 
 <p>Die Datenschutzrichtlinien in den USA sind leider nicht so streng, wie in Deutschland und als amerikanisches Unternehmen richtet sich Google an diese. Deshalb ist Analytics schon länger ein Dorn im Auge der Deutschen Datenschutzbeauftragten gewesen.</p>
 
-<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu &#8220;Personenbezogenen Daten&#8221;, denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
+<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu "Personenbezogenen Daten", denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
 
 <p>Glücklicherweise ist Google vor kurzem auf die Forderungen der Deutschen Datenschutzbeauftragten eingegangen und hat es möglich gemacht Analytics zu nutzen ohne auf Datenschutz zu verzichten.</p>
 
@@ -144,122 +144,10 @@ Wählen Sie zum Löschen des Kontos zunächst aus dem Dropdown-Menü &#8220;Mein
 
 <p>Nun ist es nämlich möglich die IP-Adressen der Nutzer zu maskieren. Das heißt das letze Byte der Adresse wird unkenntlich gemacht, also wird aus <code>207.142.131.235</code> z.B. <code>207.142.131.xxx</code>. Damit sind Nutzer nicht mehr identifizierbar. Das Maskieren ist aber standardmäßig <strong>nicht aktiviert</strong> und muss vom Webmaster selbst in den Analytics Code eingebaut werden. Das heißt auf allen Seiten, wo der Code vorkommt muss dieser um eine Funktion erweitert werden.</p>
 
-<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den &#8220;herkömmlichen&#8221; code:</p>
+<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den "herkömmlichen" code:</p>
 
 <!--:-->
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ein preiswerter Heimkino-PC]]></title>
-    <link href="http://digital-adventures.github.com/blog/2011/08/30/ein-preiswerter-heimkino-pc/"/>
-    <updated>2011-08-30T00:00:00+02:00</updated>
-    <id>http://digital-adventures.github.com/blog/2011/08/30/ein-preiswerter-heimkino-pc</id>
-    <content type="html"><![CDATA[<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2146-e1316854561287.jpg"><img class="size-large wp-image-300  " title="HTPC" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2146-e1316854561287-1024x321.jpg" alt="Vorderansicht des Antec Fusion Remote Gehäuses" width="573" height="180"></a></p>
-
-<p>Ich habe inzwischen zwei HTPC:s (home theater PC) mit den gleichen Komponenten zusammengebaut und bin dermaßen überzeugt von denen, dass ich dachte sie hier mal kurz vorzustellen.</p>
-
-<p>Ein HTPC sollte kompakt, leise und schick sein. Sonst würde man einen ungern im Wohnzimmer aufstellen. Für mich war ein niedriger Stromverbrauch auch sehr wichtig, denn ich nutze den PC auch als Mediaserver.</p>
-
-<!-- more -->
-
-
-<p>Energieeffizient und preiswert sind vor allem AMD:s Athlon Dualcore CPU:s und zwar die mit einem &#8216;e&#8217; hinter der Typnummer. So habe ich mich für den <a title="AMD Athlon II X2 240e, 2x 2.80GHz" href="http://geizhals.at/473514" target="_blank">AMD Athlon II X2 240e, 2x 2.80GHz</a> entschieden. Die CPU soll laut Hersteller gerade mal 45 Watt ziehen. Die Energieeffizienz bringt noch einen zweiten Vorteil: Durch geringere Wärmeentwicklung ist die CPU einfacher und somit leiser zu kühlen. Dazu aber später mehr.</p>
-
-<p>Die CPU passt auf Motherboards mit AM3 Sockel. So bin ich auf das <a title="ASUS M4A78LT-M, 760G" href="http://geizhals.at/495831" target="_blank">ASUS M4A78LT-M, 760G</a> gestoßen. Auch das Motherboard wirbt mit Energieeffizienz, bringt 7.1 surround sound und was sehr nett ist, einen optischen SPDIF Soundanschluss. Erwähnenswert ist auch der sogenannte &#8220;Express Gate&#8221;. Das ist eine Funktion des Motherboards, die es ermöglicht noch vor dem Booten ein &#8220;Miniaturbetriebssystem&#8221; zu laden und dadurch innerhalb von 40 Sekunden ab dem Einschalten auf Internet, Email und Skype zuzugreifen.</p>
-
-<p>Die Stromsparlinie wollte ich auch bei der Festplatte fortsetzen und habe mich deshalb für die <a title="Samsung EcoGreen F4 2000GB" href="http://geizhals.at/567146" target="_blank">Samsung EcoGreen F4 2000GB</a> entschieden. Die Platte ist relativ schnell für ihre 5400 umdrehungen und bietet genügend Platz für über hundert unkomprimierte Blu-Ray Filme.</p>
-
-<p>Als Arbeitsspeicher dienen die preiswerten <a title="G.Skill DIMM Kit 4GB PC3-10667U" href="http://geizhals.at/424104" target="_blank">G.Skill DIMM Kit 4GB PC3-10667U</a>, die auch ohne Probleme mit dem Board und der CPU zusammenarbeiten.</p>
-
-<p>Ein praktisch unhörbares hochwertiges Netzteil bekommt man schon für unter 30€: <a title="be quiet! System Power 80Plus 300W ATX 2.2" href="http://geizhals.at/394506" target="_blank">be quiet! System Power 80Plus 300W ATX 2.2</a>. Mit seinen 300 Watt kommt es locker mit dem System zurecht und hat auch keine Probleme gehabt, nachdem ich mit einer Grafikkarte nachgerüstet habe.</p>
-
-<p>In einem HTPC sollte heutzutage kein Blu-Ray laufwerk fehlen. Ein brenner ist auch immer praktisch und da hat sich der <a title="LG Electronics BH10LS30 schwarz" href="http://geizhals.at/503251" target="_blank">LG Electronics BH10LS30 schwarz</a> angeboten. Ließt und brennt eigentlich alles.</p>
-
-<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2149.jpg"><img class="size-medium wp-image-301" title="HTPC Innen" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2149-300x225.jpg" alt="Innenansicht des Antec Fusion Remote Gehäuses" width="300" height="225"></a></p>
-
-<p>Beim Gehäuse war mir wie gesagt Optik sehr wichtig. Der <a title="Antec Fusion Remote" href="http://geizhals.at/363016" target="_blank">Antec Fusion Remote</a> überzeugt auf der ganzen Linie. Das edle Gehäuse mit dicker Aluminiumblende gibt es auch in silber. Auch ein Blick unter die Haube zeigt: Hier hat man sich Gedanken gemacht. Die Kabelführung ist perfekt. Das Gehäuse ist in Kammern aufgeteilt um optimale Luftzirkulation zu gewährleisten. Ist der PC erst einmal zusammengebaut, wird man in der Kammer mit dem Motherboard sogut wie keine Kabel sehen, die sonst Wärmestaus hervorruffen können. Besonders in solchen kompakten Gehäusen ist gutes Kabelmanagement sehr wichtig.</p>
-
-<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2150.jpg"><img class="size-medium wp-image-303" title="5.25'' Laufwerkschacht" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2150-300x225.jpg" alt="5.25'' Laufwerkschacht" width="300" height="225"></a></p>
-
-<p>Nur die mitgelieferten Lüfter überzeugen nicht so ganz, doch bei einem Gehäuse dieser höhe sind 120mm Lüfter überhaupt eine Seltenheit. Die Abmessungen des Gehäuses sind übrigens exakt an standard HIFI-Racks angepasst. Viele erkennen garnicht, dass es sich hier um einen PC handelt. Dazu kommt der Antec Fusion Remote mit einer Fernbedienung und LC-Display. So kann man beim Musik hören den Fernseher ausgeschaltet lassen.</p>
-
-<p><a href="http://digital-adventures.de/blog/wp-content/uploads/SAM_2151.jpg"><img class="size-medium wp-image-302" title="SilverStone Nitrogon NT01-E Evolution" src="http://digital-adventures.de/blog/wp-content/uploads/SAM_2151-300x225.jpg" alt="SilverStone Nitrogon NT01-E Evolution" width="300" height="225"></a></p>
-
-<p>Die CPU lässt sich aufgrund der geringen Wärmeverluste (semi)passiv kühlen. Dabei ist jedoch die geringe Höhe des Gehäuses zu beachten. Der <a title="SilverStone Nitrogon NT01-E Evolution" href="http://geizhals.at/401684" target="_blank">SilverStone Nitrogon NT01-E Evolution</a> überzeugt mit guter Wärmeabfuhr und passt noch gerade unter die Haube.</p>
-
-<p>Um den PC möglichst lautlos zu machen habe ich die Festplatte in einen <a title="Sharkoon HDD Vibe-Fixer" href="http://geizhals.at/108251" target="_blank">Sharkoon HDD Vibe-Fixer</a> eingebaut und die beiden beim Gehäuse mitgelieferten 120mm Lüfter in zwei <a title="be quiet! Silent Wings PWM, 120x120x25mm" href="http://geizhals.at/475660" target="_blank">be quiet! Silent Wings PWM, 120x120x25mm</a> gewechselt. Hierbei ist zu beachten, dass das Motherboard nur über einen regelbaren PWM Anschluss (den CPU-Fan-Anschluss) verfügt. Deshalb muss ein 4 pin PWM Y-Kabel her. Der CPU-Fan-Anschluss bringt auch genügend Leistung um die beiden Lüfter zu versorgen. Für silent-freaks will ich noch die Software <a title="SpeedFan" href="http://www.almico.com/speedfan.php" target="_blank">SpeedFan</a> empfehlen, über die ich evt. noch einen Beitrag schreiben werde.</p>
-
-<p>Alles in allem hat man mit diesen Komponenten einen guten, leisen, sparsamen und schicken HTPC zusammen. Im leerlauf verbraucht der PC laut Stromzähler nur 10 Watt. Das ist wirklich beachtlich. Der im Motherboard integrierte Grafikchip spielt auch HD-Inhalte ruckelfrei ab doch wer auch ein bisschen zocken möchte, muss zu einer zusätzlichen Grafikkarte greifen.</p>
-
-<p><a title="Wunschliste" href="http://geizhals.at/deutschland/?cat=WL-144976" target="_blank">Hier noch alle Komponenten in einer Geizhals Wunschliste zusammengefasst.</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[GrooveLoader - Kostenlos Musik hören und downloaden]]></title>
-    <link href="http://digital-adventures.github.com/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden/"/>
-    <updated>2011-05-18T00:00:00+02:00</updated>
-    <id>http://digital-adventures.github.com/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden</id>
-    <content type="html"><![CDATA[<p><a href="http://digital-adventures.de/blog/wp-content/uploads/GrooveLoader-Screenshot.png"><img src="http://digital-adventures.de/blog/wp-content/uploads/GrooveLoader-Screenshot-300x149.png" alt="GrooveLoader-Screenshot" title="Screenshot" width="300" height="149" class="size-medium wp-image-400"></a></p>
-
-<p>Jeder kennt das: Es kommt einem ein vielleicht schon lange in Vergessenheit geratener Song in den Sinn und man hat plötzlich Lust diesen Song zu hören.</p>
-
-<p>Selten geht man wegen so einem Gefühl in den Plattenladen und kauft sich das ganze Album. Wenn man Glück hat, ist der Song sogar in der heimischen Musikbibliothek vorhanden. Doch was, wenn nicht? Abhilfe schafft GrooveShark™.</p>
-
-<p>Dieser Internetdienst bietet eine riesige Musikbibliothek zum anhören an. Und zwar kostenlos. Man kann sich das wie ein Internetradio vorstellen wo man jeden Song selbst auswählen kann, ohne Werbespots.</p>
-
-<p>Das Downloaden von Songs ist auf der Seite von GrooveShark™ natürlich nicht möglich und wird in den AGB:s auch untersagt. Dass es trotzdem geht, zeigt der GrooveLoader. Dieses Programm habe ich eher als &#8220;proof of concept&#8221; (Nachweis der Machbarkeit) geschrieben <strong>und bin strikt gegen eine womöglich illegale Nutzung des Programmes. Ich kann als Autor nicht für Nutzer dieses Programmes haften.</strong></p>
-
-<!-- more -->
-
-
-<p>Der GrooveLoader ist ein Javaprogramm und funktioniert auf jedem gängigen Betriebssystem mit installierter Java Virtual Machine. Mit dem GrooveLoader lässt sich nach Musik suchen, diese Abspielen und mitschneiden. Dh. ein oder mehrere Songs werden auf der Festplatte des Nutzers gespeichert. Das Speichern von Songs verstößt gegen die AGB:s von GrooveShark™ und ich trage nicht die Konsequenzen, die möglicherweise durch das Mitschneiden von Songs entstehen. Nach außen hin ist jedoch nicht sichtbar, ob der Nutzer sich einen Song anhört, oder mitschneidet.</p>
-
-<p><strong>Es wird kein Kopierschutz gebrochen</strong> und es handelt sich effektiv um das Mitschneiden von Audiostreams. Das Speichern von diesen Mitschnitten ist dann legal, wenn der Nutzer das Orginal, und GrooveShark™ die Lizenz für das Musikstück besitzt. Es gilt dann als Sicherheitskopie.</p>
-
-<p>Ich entwickle das Programm aktiv weiter, werde die Entwicklung und Verbreitung jedoch bei einer für mich als Entwickler des Programms ungünstigen Änderung der Rechtslage bzw. sobald ich solch eine feststelle einstellen.</p>
-
-<p>Oben genannte Informationen sind nach bestem Wissen und Gewissen aufgeführt.
- </p>
-
-<h3>Endbenutzer-Lizenzvertrag:</h3>
-
-
-<p> </p>
-
-<p><strong>Das Verbreiten des Programmes ist nur über Verlinkung zu dieser oder der <a title="GrooveLoader - Listen to and download songs for free" href="http://jokke.bplaced.net/2011/05/grooveloader-kostenlos-musik-horen-und-downloaden/?lang=en">entsprechenden englischen Webseite</a> erlaubt</strong>. Wer Kopien des Programmes ohne meine ausdrückliche Erlaubnis auf eine andere Art und Weise verbreitet, hat mit entsprechenden rechtlichen Konsequenzen zu rechnen.</p>
-
-<p>Ich stelle GrooveLoader als Shareware zur verfügung. Folgendes ist zu beachten: Jeder der die Software herunterlädt kann sie unbegrenzt lange benutzen (Änderungen vorbehalten) mit zwei Einschränkungen:</p>
-
-<ol>
-<li><p>Ab und zu erscheint beim starten des Programmes ein Fenster, wo der Benutzer gebeten wird einen beliebigen Betrag zu Spenden um den GrooveLoader mit vollem Funktionsumfang nutzen zu können. Dieses Fenster kann für 30 sekunden nicht geschlossen werden und erst nach den 30 sekunden startet das eigentliche Programm.</p></li>
-<li><p>Es ist nur möglich einen Song auf einmal zu downloaden.</p></li>
-</ol>
-
-
-<p>Wer von diesen Einschränkungen befreit werden will, muss einen beliebigen Betrag (so viel, wie einem das Programm wert ist) spenden. Entweder über den Spenden Button weiter unten oder im Programm selbst. Ist die Spende eingegangen, bekommt der Benutzer einen Lizenzschlüssel an die von Paypal angezeigte Emailadresse gesandt. Mit diesem Schlüssel, dem Vor- und Nachnamen und der Emailadresse lässt sich der volle Funktionsumfang von GrooveLoader freischalten.</p>
-
-<p>Achtung:
-Die Lizenzen sind personenbezogen, dh. sie dürfen und durften nicht weiterverbreitet werden. Wer dies trotzdem tut, muss mit der deaktivierung seiner/ihrer Lizenz rechnen.</p>
-
-<p>Ende des Endnutzer-Lizenzvertrages</p>
-
-<p>Bedanken möchte ich mich an dieser Stelle besonders bei <a href="http://www.scilor.com/">SciLor</a>, der die API für GrooveShark™ freundlicherweise zu Verfügung gestellt hat.</p>
-
-<p><strong>NOTICE:</strong></p>
-
-<p>This product includes software developed by The Apache Software Foundation (<a href="http://www.apache.org/">http://www.apache.org/</a>).</p>
-
-<p>It consists of voluntary contributions made by many individuals on behalf of the Apache Software Foundation. Please visit the project homepage (<a href="http://jakarta.apache.org/regexp">http://jakarta.apache.org/regexp</a>) for more information.</p>
-
-<p><a href="http://digital-adventures.de/files/GrooveLoader/download.html">Der Link zum Download befindet sich hier</a>. Laden Sie die Software bitte nur herunter, wenn Sie oben genanntes zur Kenntniss genommen und akzeptiert haben.</p>
-
-<p>Wem die Software gefällt, kann mir gerne ein Bier ausgeben und dafür GrooveLoader mit vollem Funktionsumfang benutzen!</p>
-
-<p><form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" type="hidden" value="_s-xclick"><input name="hosted_button_id" type="hidden" value="YDVDERASD93QA"><input alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." name="submit" src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/de_DE/DE/i/btn/btn_donateCC_LG.gif" type="image"><img src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/de_DE/i/scr/pixel.gif" border="0" alt="" width="1" height="1">
-</form></p>
 ]]></content>
   </entry>
   
@@ -279,7 +167,7 @@ Die Lizenzen sind personenbezogen, dh. sie dürfen und durften nicht weiterverbr
 
 <p>Da KeePass open source ist, gibt es für jedes gängige Betriebssystem eine Version. Damit meine ich nicht nur Windows, Mac, Linux und Co., sondern auch z.B. Android und IOS. Ich habe meine Passwörter immer in der Hosentasche. Und dann wäre da die Benutzerfreundlichkeit, von der ich gesprochen habe:</p>
 
-<p>KeePass hat eine geniale Funktion die sich Auto-Type nennt. Die funktioniert folgendermaßen: Man legt in KeePass für einen Passworteintrag fest, wo dieser eingegeben wird. Als Beispiel nehme ich mal Facebook. Dazu öffnet man die Seite von Facebook und bei dem KeePass Passworteintrag wählt man <em>Tools -> Auto-Type: Select Target Window&#8230;</em> aus und sucht die Anmeldeseite von Facebook aus der drop-down-Liste.</p>
+<p>KeePass hat eine geniale Funktion die sich Auto-Type nennt. Die funktioniert folgendermaßen: Man legt in KeePass für einen Passworteintrag fest, wo dieser eingegeben wird. Als Beispiel nehme ich mal Facebook. Dazu öffnet man die Seite von Facebook und bei dem KeePass Passworteintrag wählt man <em>Tools -> Auto-Type: Select Target Window...</em> aus und sucht die Anmeldeseite von Facebook aus der drop-down-Liste.</p>
 
 <p>Als nächstes wählt man <em>Tools -> Auto-Type: Customize Sequence</em> aus um festzulegen, <em>wie</em> das Passwort bzw. Username und Passwort bei der Seite eingegeben werden soll. Voreingestellt ist <em>Username Tabulator Passwort Eingabetaste</em>. Wenn sich beim öffnen der Seite jedoch der Textcursor nicht schon im Username-Feld befindet, probiert man einfach aus so lange Tabulator zu drücken (und mit zu zählen), bis man im Feld angekommen ist.</p>
 
@@ -294,57 +182,13 @@ Die Lizenzen sind personenbezogen, dh. sie dürfen und durften nicht weiterverbr
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[DPD Paket nicht zugestellt..]]></title>
-    <link href="http://digital-adventures.github.com/blog/2011/04/05/dpd-paket-nicht-zugestellt/"/>
-    <updated>2011-04-05T00:00:00+02:00</updated>
-    <id>http://digital-adventures.github.com/blog/2011/04/05/dpd-paket-nicht-zugestellt</id>
-    <content type="html"><![CDATA[<p>Schon eigenartig.. Man wartet ab 9:00 morgens auf sein Paket, dreimal klingelt jemand an der Tür, zweimal der &#8220;Pooost bitte&#8221;-Mann und einmal der Angestellte von den Stadtwerken, der die Stromzähler im Keller überprüfen soll. Man würde denken, die Klingel funktioniert. Erstaunlicherweise zeigt einem die Paketverfolgungsseite an, dass das Paket um 10:30 versucht worden ist zuzustellen, der Empfänger aber nicht angetroffen und eine Nachricht hinterlassen wurde.</p>
-
-<!-- more -->
-
-
-<p>Also wenn die Zusteller einfach, weil sie gerade mit ihrem Zeitplan hinterherhinken beschließen ein Paket nicht zuzustellen und dann mit &#8220;Empfänger nicht angetroffen&#8221; abstempeln, finde ich das ziemlich dreist.. Anders kann ich es mir echt nicht erklären. Eine Nachricht habe ich übrigens auch nicht im Postkasten oder an der Haustür. Als ich bei DPD angerufen habe, sagte man mir, dass da nichts zu machen sei und das Paket morgen nochmal ausgeliefert wird. Also dann, bis morgen DPD!</p>
-
-<p>Zu krass.. Ich habe durch ein paar Kundenbewertungen von DPD gestöbert und bin auf <a href="http://www.dooyoo.de/transport-automobildienstleister/dpd-deutscher-paket-dienst/1447179/" target="_blank">diesen Bericht</a> gestoßen. Den hat ein ehemaliger Fahrer von DPD geschrieben. Hier ein paar Ausschnitte:</p>
-
-<!--more Weiterlesen... -->
-
-
-<blockquote>In der Route merkt man das man für ein zwei Päcken einen umweg von 10  Minuten in Kauf nehmen müsste und da hat DPD ein kleines Schlupfloch für  Fahrer gelassen: Empfänger nicht anwesend) Das bedeutet nichts weiter  als das man einfach keine Lust hat 10 Minuten in ein Kuhkaff zu fahren  und Päckchen auszuliefern.</blockquote>
-
-
-<p>Also wirklich so wie ich es mir gedacht habe..</p>
-
-<blockquote>&#8230;ein Kunde nicht Zuhause. Nun gibt es drei Möglichkeiten: Die Beste: Wir  wecken den freundlichen Nachbar (der sich gerade zu Ruhe begeben hatte  weil er aus der Nachtschicht kommt) und er nimmt das Paket mit  Unterschrift entgegen. Die mittlere Lösung und für den Fahrer am  schlechteste Lösung. Wir nehmen den Dienstweg und versuchen das Paket am  Folgetag auszuliefern. Die schlechteste Lösung: Paket hinstellen  Unterschrift fälschen und gut ist (und das ist eine Anweisung vom Chef!)</blockquote>
-
-
-<p>So etwas sollte schon strafrechtliche Konsequenzen haben.. Unglaublich. Hoffentlich bekomme ich mein Paket noch irgendwann.</p>
-
-<p>Nachtrag:
-Mein Paket habe ich am nächsten Tag bekommen. Auf dem Aufkleber mit meiner Addresse stand &#8220;Bitte klingeln!!!!!!&#8221; :)<!--:--></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cooler Videoplayer]]></title>
-    <link href="http://digital-adventures.github.com/blog/2011/04/05/cooler-videoplayer/"/>
-    <updated>2011-04-05T00:00:00+02:00</updated>
-    <id>http://digital-adventures.github.com/blog/2011/04/05/cooler-videoplayer</id>
-    <content type="html"><![CDATA[<p>Sehr nützlich bei z.B. Videoüberwachungen, um nicht minutenlang zu spulen um den relevanten Ausschnitt zu finden.</p>
-
-<p><a href="http://www.snotr.com/video/1213/Interesting_new_video_player">Interesting new video player</a>
-Quelle: snotr.com<!--:--></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[PGP für Emails: Warum man es nutzen sollte und wie es eingerichtet wird]]></title>
     <link href="http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird/"/>
     <updated>2011-04-04T00:00:00+02:00</updated>
     <id>http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird</id>
     <content type="html"><![CDATA[<p><strong>Was ist PGP überhaupt?</strong></p>
 
-<p>PGP steht für &#8220;pretty good privacy&#8221; und wurde 1991 von einem Amerikaner namens Phil Zimmermann entwickelt. Bei PGP handelt es sich um eine Verschlüsselung mit sog. &#8220;Public-Key-Verfahren&#8221;. Das heißt jeder Nutzer hat nicht einen Schlüssel, sondern ein Schlüsselpaar bestehend aus einem öffentlichen und einem geheimen Schlüssel. Für den Sender einer Nachricht reicht es den öffentlichen Schlüssel des Empfängers zu kennen, um die Nachricht für den Empfänger zu verschlüsseln. Die Nachricht lässt sich nun nur mit dem privaten Schlüssel des Empfängers entschlüsseln. Es handelt sich also um ein asynchrones Verschlüsselungsverfahren.</p>
+<p>PGP steht für "pretty good privacy" und wurde 1991 von einem Amerikaner namens Phil Zimmermann entwickelt. Bei PGP handelt es sich um eine Verschlüsselung mit sog. "Public-Key-Verfahren". Das heißt jeder Nutzer hat nicht einen Schlüssel, sondern ein Schlüsselpaar bestehend aus einem öffentlichen und einem geheimen Schlüssel. Für den Sender einer Nachricht reicht es den öffentlichen Schlüssel des Empfängers zu kennen, um die Nachricht für den Empfänger zu verschlüsseln. Die Nachricht lässt sich nun nur mit dem privaten Schlüssel des Empfängers entschlüsseln. Es handelt sich also um ein asynchrones Verschlüsselungsverfahren.</p>
 
 <p>Das Public-Key-Verfahren hat den Vorteil, dass es kein Problem mehr darstellt Schlüssel zwischen Korrespondenten auszutauschen, da die öffentlichen Schlüssel jedem, auch dem schlimmsten Feind, zugänglich gemacht werden können (z.B. über Schlüsselserver. Dazu später mehr), ohne dass die Sicherheit der Verschlüsselung gefährdet wird.</p>
 
@@ -367,14 +211,14 @@ Quelle: snotr.com<!--:--></p>
 
 <p><strong>GPG Installieren</strong></p>
 
-<p>Nein, ich habe mich nicht verschrieben. GPG oder GnuPG steht für &#8220;Gnu Privacy Guard&#8221; und ist eine kostenlose und freie Software um PGP zu nutzen. Sie ist für alle gängigen Betriebssysteme erhältlich und bei den meisten Linux Distributionen vorinstalliert. GPG zu installieren ist einfach: <a title="GPG Download Seite" href="http://www.gnupg.org/download/index.de.html" target="_blank">Hier</a> die neuste Version unter Binärdateien (Executables) runterladen. Die Datei ausführen und dem Installationsassistenten folgen.</p>
+<p>Nein, ich habe mich nicht verschrieben. GPG oder GnuPG steht für "Gnu Privacy Guard" und ist eine kostenlose und freie Software um PGP zu nutzen. Sie ist für alle gängigen Betriebssysteme erhältlich und bei den meisten Linux Distributionen vorinstalliert. GPG zu installieren ist einfach: <a title="GPG Download Seite" href="http://www.gnupg.org/download/index.de.html" target="_blank">Hier</a> die neuste Version unter Binärdateien (Executables) runterladen. Die Datei ausführen und dem Installationsassistenten folgen.</p>
 
 <blockquote>Update 15.09.2011:
 
 Die links für Windows Binärdateien führen zur seite <a href="http://gpg4win.de/">gpg4win.de/</a>. Dort wird ein Paket angeboten, mit allem was man so braucht (oder auch nicht braucht) um GPG zu nutzen. Während der Installation hat man aber die Möglichkeit auszuwählen, welche Programme installiert werden sollen. Für die folgende Anleitung ist nur GnuPG nötig. Zu beachten ist, dass gpg4win gpg2 installiert also im folgenden den Anweisungen für gpg2 folgen.</blockquote>
 
 
-<p><a href="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath.png" target="_blank"><img class="alignright size-thumbnail wp-image-11" title="GPG Pfad in Path Umgebungsvariable einfügen" src="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath-150x150.png" alt="" width="150" height="150"></a>Für Windows: Danach den Pfad von GPG in die Systemvariable &#8220;Path&#8221; schreiben. Dazu <em>Systemsteuerung</em> öffnen <em>-> System -> Erweiterte Systemeinstellungen -> Umgebungsvariablen</em>. Aus der Liste <em>Path</em> heraus suchen, auswählen und auf Bearbeiten klicken. Nun fügt man ganz am Ende ein Semikolon ein und danach den Pfad zum GPG Installationsordner.</p>
+<p><a href="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath.png" target="_blank"><img class="alignright size-thumbnail wp-image-11" title="GPG Pfad in Path Umgebungsvariable einfügen" src="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath-150x150.png" alt="" width="150" height="150"></a>Für Windows: Danach den Pfad von GPG in die Systemvariable "Path" schreiben. Dazu <em>Systemsteuerung</em> öffnen <em>-> System -> Erweiterte Systemeinstellungen -> Umgebungsvariablen</em>. Aus der Liste <em>Path</em> heraus suchen, auswählen und auf Bearbeiten klicken. Nun fügt man ganz am Ende ein Semikolon ein und danach den Pfad zum GPG Installationsordner.</p>
 
 <p> </p>
 
@@ -384,7 +228,7 @@ Die links für Windows Binärdateien führen zur seite <a href="http://gpg4win.d
 
 <p>Ein Assistent fragt einen nun was für eine Art von Schlüsselpaar man erzeugen möchte. Hier würde ich empfehlen, die Voreingestellte Option zu nehmen. Als nächstes wird man nach der gewünschten Schlüssellänge gefragt. Hier empfehle ich 4096 Bit, was aber auch nur dann zur Stärke eines Schlüsselpaares beiträgt, wenn man ein starkes Passphrase angibt (dazu gleich mehr).</p>
 
-<p>Als nächstes wird gefragt, wann das Schlüsselpaar verfallen soll. Hier kann jeder für sich selbst entscheiden. Wenn man aber &#8220;Schlüssel verfällt nie&#8221; auswählt, ist es um so wichtiger ein Widerrufzertifikat anlegen (dazu ebenfalls später mehr).</p>
+<p>Als nächstes wird gefragt, wann das Schlüsselpaar verfallen soll. Hier kann jeder für sich selbst entscheiden. Wenn man aber "Schlüssel verfällt nie" auswählt, ist es um so wichtiger ein Widerrufzertifikat anlegen (dazu ebenfalls später mehr).</p>
 
 <p>Die nächsten drei Schritte sollten selbsterklärend sein, danach wird man aufgefordert ein Passphrase einzugeben. Wie bei allen Passwörtern sollte man ein möglichst langes und unsinniges Passwort auswählen. Das Passphrase sollte also eine lange Folge von kleinen und großen Buchstaben, Zahlen und Sonderzeichen sein. So in etwa: <code>2gTw\W"<sup>*KB@8RT'`?NQHBS3ccZ!aS</code>.</sup> Wer der Meinung ist, dass sich so etwas nie merken lässt, sollte ein Auge auf <a href="http://keepass.info/">KeePass</a> (Windows) oder <a href="http://www.keepassx.org/">KeePassX</a> (Mac Os und Linux) werfen. Ich will noch einmal betonen: Eine Verschlüsselung steht und fällt mit der Qualität des Passwortes. Eine 4096 Bit Verschlüsselung mit dem Passwort <code>BorussiaDortmund</code> macht wenig Sinn.</p>
 
@@ -414,11 +258,11 @@ Die links für Windows Binärdateien führen zur seite <a href="http://gpg4win.d
 
 <p><strong>Enigmail installieren und einrichten:</strong></p>
 
-<p>Um Enigmail zu Thunderbird hinzuzufügen, geht man in Thunderbird auf <em>Extras -> Addons</em>. Unter <em>Addons Suchen</em> sollte Enigmail schon bei den Empfohlenen Addons aufgelistet sein. Wenn nicht, findet man es durch eingeben von &#8220;Enigmail&#8221; in die Suchzeile. Ein klick auf <em>Zu Thunderbird hinzufügen </em>und danach auf <em>Jetzt installieren</em> installiert Enigmail und nach einem Neustart von Thunderbird ist das Plugin betriebsbereit.</p>
+<p>Um Enigmail zu Thunderbird hinzuzufügen, geht man in Thunderbird auf <em>Extras -> Addons</em>. Unter <em>Addons Suchen</em> sollte Enigmail schon bei den Empfohlenen Addons aufgelistet sein. Wenn nicht, findet man es durch eingeben von "Enigmail" in die Suchzeile. Ein klick auf <em>Zu Thunderbird hinzufügen </em>und danach auf <em>Jetzt installieren</em> installiert Enigmail und nach einem Neustart von Thunderbird ist das Plugin betriebsbereit.</p>
 
 <p>Jetzt muss Enigmail nur noch eingerichtet werden. Das ist mit dem OpenPGP Assistenten schnell erledigt. Dazu geht man in Thunderbird auf <em>OpenPGP -> OpenPGP-Assistent</em> und klickt sich durch. Bei <em>Schlüsselauswahl</em> wählt man den zuvor erstellten Schlüssel aus.</p>
 
-<p>Das war&#8217;s auch schon. Jetzt steht einer Nutzung von PGP nichts mehr im Wege.</p>
+<p>Das war's auch schon. Jetzt steht einer Nutzung von PGP nichts mehr im Wege.</p>
 
 <p> </p>
 

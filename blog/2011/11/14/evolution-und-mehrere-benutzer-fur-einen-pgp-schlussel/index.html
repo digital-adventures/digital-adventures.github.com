@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Evolution und mehrere Benutzer für einen PGP-Schlüssel - Digital Adventures</title>
+  <meta name="author" content="Joakim Reinert">
+
+  
+  <meta name="description" content="Dieser Artikel sei meinem Bloggerkollegen Max gewidmet, der mich überhaupt indirekt dazu gebracht hat hier nachzuforschen. Vielleicht hat der eine &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://digital-adventures.github.com/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Digital Adventures" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Digital Adventures</a></h1>
+  
+    <h2>Alles rund um Software, Hardware, dies und das</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="http://eepurl.com/fRMf5" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:digital-adventures.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Evolution und mehrere Benutzer für einen PGP-Schlüssel</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-14T00:00:00+01:00" pubdate data-updated="true">11/14/11</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Dieser Artikel sei meinem <a href="http://blog.dsiw-it.de/">Bloggerkollegen Max</a> gewidmet, der mich überhaupt indirekt dazu gebracht hat hier nachzuforschen.</p>
+
+<p>Vielleicht hat der eine oder andere schon mal die Erfahrung gemacht, dass ein Korrespondent mehrere E-Mailadressen, aber nur einen PGP-Schlüssel hat. Es lässt sich immernoch problemlos E-Mails, oder Dateien für den Empfänger verschlüsseln, nur muss man dazu logischerweise immer die E-Mailadresse, die im Schlüssel eingetragen ist, oder die achtstellige key-ID angeben.</p>
+
+<p>Die meisten sind dann doch zu bequem, um E-Mails in der Kommandozeile zu verschlüsseln und benutzen die einen, oder anderen Helferlein um den umgang mit PGP zu erleichtern.</p>
+
+<!-- more -->
+
+
+<p>Erst vor kurzem ist mir zu Ohren gekommen, dass Evolution (der standard Email-Client in Gnome, also u.a. auch in Ubuntu) PGP von Haus aus unterstützt. Bis jetzt war ich ein nutzer von Mozillas Thunderbird in Kombination mit dem Add-On Enigmail.</p>
+
+<p>Evolution ist aber, da es ein standard Bestandteil von Gnome ist, sehr gut integriert: Ein Klick auf die Uhr öffnet einen kleinen Kalender, wo alle in Evolution eingetragenen Termine zu sehen sind. In Ubuntu wird unter dem &#8220;Briefumschlagmenü&#8221; eine Übersicht der eingegangenen E-Mails angezeigt und so weiter.</p>
+
+<p>Deshalb habe ich mir gedacht, ich gebe Evolution mal eine Chance. Die Einrichtung ist natürlich kinderleicht und PGP ist auch in wenigen Klicks eingerichtet. Dazu geht man auf Bearbeiten -> Einstellungen -> E-Mail-Konten, wählt das gewünschte Konto aus und klickt rechts auf Bearbeiten. Unter dem Reiter Sicherheit trägt man dann die Key-ID seines Schlüssels ein. Und das war&#8217;s auch schon. Um nun Nachrichten zu verschlüsseln, oder zu signieren, klickt man im &#8220;Nachricht verfasen&#8221;-Fenster auf Optionen und wählt dort die gewünschten Aktionen aus.</p>
+
+<p>Kinderleichte Einrichtungen haben aber meistens den Nachteil, dass einem genaueres Einstellen schwer, oder sogar unmöglich gemacht werden. Zu dieser Erkenntniss bin ich wieder mal gekommen, als ich dann eine E-Mail an meinen Bloggerkollegen Max verschlüsseln und schicken wollte.</p>
+
+<p>Es begrüßte mich die Fehlermeldung: &#8220;Öffentlicher Schlüssel wurde nicht gefunden&#8221;. Den Schlüssel hatte ich aber. Das Problem war jedoch, dass Max mehrere E-Mailadressen benutzt, aber eben nur eine in seinem Schlüssel eingetragen hat und ich die E-Mail an eine der anderen Adressen abschicken wollte.</p>
+
+<p>Man würde denken, dass es möglich wäre, so wie bei Enigmail zum Beispiel, bestimmten E-Mailadressen bestimmte Schlüssel zuzuweisen. Fehlanzeige. Nachdem ich einige Zeit recherchiert habe, fand ich heraus, dass es möglich ist mehrere Nutzer für seinen Schlüssel einzutragen. Diese können dann auch eine andere E-Mail Adresse eintragen. Ist der Nutzer eingetragen, hat Evolution beziehungsweise gnuPG auch kein Problem mehr für die neue E-Mailadresse den richtigen öffentlichen Schlüssel zu finden.</p>
+
+<p>So wird ein neuer Nutzer für einen Schlüssel eingetragen:
+Das Ganze funktioniert, soweit ich weiß, nur in der Kommandozeile, also Terminal öffnen und folgendes eintippen:
+<code>gpg --edit-key 1E65B070</code>
+hier ist die Hex-Zahlenfolge natürlich mit der Key-ID des eigenen Schlüssels zu ersetzen.
+Es öffnet sich ein Prompt. Hier gibt man ein:
+<code>adduid</code>
+Es folgt eine Abfrage des Namens, der Email-Adresse und eines Kommentars.
+Danach wird gefragt, ob alles so richtig ist und man bestätigt mit <code>F</code>.
+Nachdem man seine Passphrase eingegeben hat, sollte nochmal die Informationen zu dem Schlüssel angezeigt werden, und dort sollte nun der neue Nutzer aufgelistet sein.
+Jetzt gibt man ein:
+<code>quit</code>
+Und bestätigt, dass man die Änderungen speichern will.</p>
+
+<p>Jetzt sollte man seinen Schlüssel noch auf dem/den Keyserver(n) updaten, und seine Korrespondenten eventuell über die Änderungen benachrichtigen.<!--:--></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Joakim Reinert</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-14T00:00:00+01:00" pubdate data-updated="true">11/14/11</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/sicherheit-und-datenschutz/'>Sicherheit und Datenschutz</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://digital-adventures.github.com/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/" data-via="digitadventures" data-counturl="http://digital-adventures.github.com/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/" title="Previous Post: Google Analytics datenschutzkonform nutzen">&laquo; Google Analytics datenschutzkonform nutzen</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/">Evolution und mehrere Benutzer für einen PGP-Schlüssel</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/">Google Analytics datenschutzkonform nutzen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/30/ein-preiswerter-heimkino-pc/">Ein preiswerter Heimkino-PC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden/">GrooveLoader - Kostenlos Musik hören und downloaden</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/07/keepass-vorgestellt/">KeePass vorgestellt</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/digital-adventures">@digital-adventures</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'digital-adventures',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("digitadventures", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/digitadventures" class="twitter-follow-button" data-show-count="false">Follow @digitadventures</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Joakim Reinert -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'digital-adventures';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://digital-adventures.github.com/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/';
+        var disqus_url = 'http://digital-adventures.github.com/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

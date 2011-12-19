@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>PGP für Emails: Warum man es nutzen sollte und wie es eingerichtet wird - Digital Adventures</title>
+  <meta name="author" content="Joakim Reinert">
+
+  
+  <meta name="description" content="Was ist PGP überhaupt? PGP steht für &#8220;pretty good privacy&#8221; und wurde 1991 von einem Amerikaner namens Phil Zimmermann entwickelt. Bei PGP &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Digital Adventures" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Digital Adventures</a></h1>
+  
+    <h2>Alles rund um Software, Hardware, dies und das</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="http://eepurl.com/fRMf5" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:digital-adventures.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">PGP für Emails: Warum man es nutzen sollte und wie es eingerichtet wird</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-04T00:00:00+02:00" pubdate data-updated="true">04/04/11</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong>Was ist PGP überhaupt?</strong></p>
+
+<p>PGP steht für &#8220;pretty good privacy&#8221; und wurde 1991 von einem Amerikaner namens Phil Zimmermann entwickelt. Bei PGP handelt es sich um eine Verschlüsselung mit sog. &#8220;Public-Key-Verfahren&#8221;. Das heißt jeder Nutzer hat nicht einen Schlüssel, sondern ein Schlüsselpaar bestehend aus einem öffentlichen und einem geheimen Schlüssel. Für den Sender einer Nachricht reicht es den öffentlichen Schlüssel des Empfängers zu kennen, um die Nachricht für den Empfänger zu verschlüsseln. Die Nachricht lässt sich nun nur mit dem privaten Schlüssel des Empfängers entschlüsseln. Es handelt sich also um ein asynchrones Verschlüsselungsverfahren.</p>
+
+<p>Das Public-Key-Verfahren hat den Vorteil, dass es kein Problem mehr darstellt Schlüssel zwischen Korrespondenten auszutauschen, da die öffentlichen Schlüssel jedem, auch dem schlimmsten Feind, zugänglich gemacht werden können (z.B. über Schlüsselserver. Dazu später mehr), ohne dass die Sicherheit der Verschlüsselung gefährdet wird.</p>
+
+<p>Mit PGP lassen sich Nachrichten auch Unterschreiben, das heißt der Sender einer Nachricht bestätigt mit seinem Privaten Schlüssel, dass die Nachricht von ihm/ihr stammt. Mit dem öffentlichen Schlüssel des Senders kann der Empfänger nun prüfen, ob die unterschriebene Nachricht tatsächlich vom Sender stammt und nicht auf dem Weg verändert worden ist.</p>
+
+<!-- more -->
+
+
+<p><strong>Warum Verschlüsseln?</strong></p>
+
+<p>Man erinnere sich zurück an die Zeit vor dem Internet. Die gängige Art schriftlich miteinander zu kommunizieren war mittels Briefen per Post. Der Sender hat seinen Brief unterschrieben, in einen Umschlag gesteckt und losgeschickt. Der Empfänger konnte leicht anhand des unbeschädigten und ungeöffneten Umschlags und der Handschrift des Senders auf diesem erkennen, ob der Brief geöffnet, gelesen oder manipuliert worden ist. Früher hat man sogar ein Siegel in Wachs auf den Umschlag gedrückt.</p>
+
+<p>Zurück ins Internetzeitalter. Heute schreiben immer weniger Menschen ihre Ideen und Gedanken auf Papier. Wir leben in einer digitalen Welt, wo Informationen, Ideen und Gedanken anderer für jedermann zugänglich sind. So wie dieser Blog zum Beispiel. Heute sind Worte wie Datenschutz und Privatsphäre in aller Munde und trotzdem kümmern sich die Menschen immer weniger darum. Meistens weil ihnen überhaupt nicht klar ist, dass diese gefährdet sein könnten. Ich mache diesen Blog jedem zugänglich, weil ich es will. E-Mails, weil ich es muss.</p>
+
+<p>Richtig. Du, ich, wir alle, die unverschlüsselte Emails versenden, machen diese für jeden, der auch nur ein bisschen Ahnung hat, zugänglich. Mit zugänglich meine ich sowohl lesbar als auch änderbar. Das ist so als würde man einen Brief maschinell geschrieben (kein Handschriftvergleich) ohne Briefumschlag per Post verschicken. Macht ja auch keiner, oder?</p>
+
+<p>Ich muss meine E-Mails jedem zugänglich machen, weil so wenige PGP Verschlüsselung nutzen. Wie oben erwähnt braucht man den öffentlichen Schlüssel des Empfängers, um eine Nachricht zu verschlüsseln, also muss der Empfänger ein PGP Schlüsselpaar erzeugt haben. Ich will versuchen meinen Anteil zu tun PGP ein wenig bekannter zu machen und dessen Nutzung zu erklären. Es ist nämlich ganz einfach:</p>
+
+<p> </p>
+
+<p><strong>GPG Installieren</strong></p>
+
+<p>Nein, ich habe mich nicht verschrieben. GPG oder GnuPG steht für &#8220;Gnu Privacy Guard&#8221; und ist eine kostenlose und freie Software um PGP zu nutzen. Sie ist für alle gängigen Betriebssysteme erhältlich und bei den meisten Linux Distributionen vorinstalliert. GPG zu installieren ist einfach: <a title="GPG Download Seite" href="http://www.gnupg.org/download/index.de.html" target="_blank">Hier</a> die neuste Version unter Binärdateien (Executables) runterladen. Die Datei ausführen und dem Installationsassistenten folgen.</p>
+
+<blockquote>Update 15.09.2011:
+
+Die links für Windows Binärdateien führen zur seite <a href="http://gpg4win.de/">gpg4win.de/</a>. Dort wird ein Paket angeboten, mit allem was man so braucht (oder auch nicht braucht) um GPG zu nutzen. Während der Installation hat man aber die Möglichkeit auszuwählen, welche Programme installiert werden sollen. Für die folgende Anleitung ist nur GnuPG nötig. Zu beachten ist, dass gpg4win gpg2 installiert also im folgenden den Anweisungen für gpg2 folgen.</blockquote>
+
+
+<p><a href="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath.png" target="_blank"><img class="alignright size-thumbnail wp-image-11" title="GPG Pfad in Path Umgebungsvariable einfügen" src="http://jokke.bplaced.net/wp-content/uploads/2011/04/GnuPGPath-150x150.png" alt="" width="150" height="150"></a>Für Windows: Danach den Pfad von GPG in die Systemvariable &#8220;Path&#8221; schreiben. Dazu <em>Systemsteuerung</em> öffnen <em>-> System -> Erweiterte Systemeinstellungen -> Umgebungsvariablen</em>. Aus der Liste <em>Path</em> heraus suchen, auswählen und auf Bearbeiten klicken. Nun fügt man ganz am Ende ein Semikolon ein und danach den Pfad zum GPG Installationsordner.</p>
+
+<p> </p>
+
+<p><strong>Schlüsselpaar und Widerrufzertifikat erzeugen:</strong></p>
+
+<p>Um PGP nutzen zu können braucht man ein Schlüsselpaar. Dieses kann nun von GPG generiert werden. Dazu öffnet man in Windows die Kommandozeile (<em>Start -> Ausführen -> cmd</em>), in Mac OS und Linux das Terminal (in Mac OS unter <em>Programme -> Dienstprogramme</em> zu finden). In die Kommandozeile gibt man ein: <code>gpg --gen-key</code> oder für gpg2: <code>gpg2 --gen-key</code></p>
+
+<p>Ein Assistent fragt einen nun was für eine Art von Schlüsselpaar man erzeugen möchte. Hier würde ich empfehlen, die Voreingestellte Option zu nehmen. Als nächstes wird man nach der gewünschten Schlüssellänge gefragt. Hier empfehle ich 4096 Bit, was aber auch nur dann zur Stärke eines Schlüsselpaares beiträgt, wenn man ein starkes Passphrase angibt (dazu gleich mehr).</p>
+
+<p>Als nächstes wird gefragt, wann das Schlüsselpaar verfallen soll. Hier kann jeder für sich selbst entscheiden. Wenn man aber &#8220;Schlüssel verfällt nie&#8221; auswählt, ist es um so wichtiger ein Widerrufzertifikat anlegen (dazu ebenfalls später mehr).</p>
+
+<p>Die nächsten drei Schritte sollten selbsterklärend sein, danach wird man aufgefordert ein Passphrase einzugeben. Wie bei allen Passwörtern sollte man ein möglichst langes und unsinniges Passwort auswählen. Das Passphrase sollte also eine lange Folge von kleinen und großen Buchstaben, Zahlen und Sonderzeichen sein. So in etwa: <code>2gTw\W"<sup>*KB@8RT'`?NQHBS3ccZ!aS</code>.</sup> Wer der Meinung ist, dass sich so etwas nie merken lässt, sollte ein Auge auf <a href="http://keepass.info/">KeePass</a> (Windows) oder <a href="http://www.keepassx.org/">KeePassX</a> (Mac Os und Linux) werfen. Ich will noch einmal betonen: Eine Verschlüsselung steht und fällt mit der Qualität des Passwortes. Eine 4096 Bit Verschlüsselung mit dem Passwort <code>BorussiaDortmund</code> macht wenig Sinn.</p>
+
+<p>Hat man ein Passphrase eingegeben, macht sich GPG an das Generieren des Schlüsselpaares. Das dauert je nach Rechenleistung ein paar Minuten. Während dessen sollte man sich mit etwas anderem am Rechner beschäftigen, um die Zufallswertgenerierung von GPG, die zum Erstellen des Schlüsselpaares nötig ist, zu unterstützen.</p>
+
+<p>Ist der Schlüssel erst einmal erstellt, sollte man ein Widerrufzertifikat erzeugen. Das wird benötigt um den Schlüssel wieder ungültig zu machen wenn man z.B. seinen privaten Schlüssel verliert. Um das Wiederrufzertifikat zu erzeugen gibt man in die Kommandozeile folgendes ein: <code>gpg --gen-revoke -a -o widerrufzertifikat.asc user-id</code> oder für gpg2: <code>gpg2 --gen-revoke -a -o widerrufzertifikat.asc user-id</code></p>
+
+<p>Anstelle von <code>widerrufzertifikat</code> kann man einen beliebigen Dateinamen angeben und anstelle von <code>user-id</code> gibt man die zuvor beim Erstellen des Schlüssels eingegebene Email Addresse ein. Nach Eingabe führt ein Assistent einen durch den Prozess. Den Hinweis das Widerrufzertifikat an einem sicheren Ort zu speichern würde ich übrigens wahrnehmen.</p>
+
+<p>Um den Schlüssel zu wiederrufen, also ungültig zu machen, muss man nur das erstellte Widerrufzertifikat importieren. Ein Widerrufen kann man meines Wissens nicht wieder rückgängig machen, also vorsicht!</p>
+
+<p>Jetzt kann man anfangen PGP zu benutzen!</p>
+
+<p> </p>
+
+<p><strong>PGP benutzen:</strong></p>
+
+<p>GPG ist ein Kommandozeilenprogramm, also lassen sich alle Funktionen von PGP über die Kommandozeile nutzen. Da das für viele Nutzer zu Umständlich ist, gibt es diverse Grafische Frontends, die den Umgang mit GPG erleichtern. Wer GPG über die Kommandozeile nutzen will, kann sich mit dem Befehl <code>gpg --help</code> einen Überblick verschaffen.</p>
+
+<p>Das Frontend meiner Wahl und das, was ich hier vorstellen werde ist Enigmail zusammen mit dem Email-Programm Thunderbird. Enigmail ist sehr benutzerfreundlich, plattformunabhängig und kompakt.</p>
+
+<p>Wer Thunderbird noch nicht installiert hat, sollte das unbedingt tun, denn die Benutzeroberfläche ist wesentlich angenehmer und intuitiver zu benutzen als die meisten Weboberflächen von Email-Accounts. Man kann mehrere Email-Accounts einrichten und die Anwendung durch unzählige Plugins nach wünschen erweitern. Thunderbird stammt von Mozilla, die unter anderem auch den Beliebten Webbrowser Firefox entwickelt hat. <a href="http://www.thunderbird-mail.de/wiki/Herunterladen">Hier kann man die neuste Version von Thunderbird herunterladen</a>.</p>
+
+<p>Zur Installation und Einrichtung von Thunderbird will ich hier nicht eingehen. Wer Probleme hat, wird bei Google sicher fündig.</p>
+
+<p> </p>
+
+<p><strong>Enigmail installieren und einrichten:</strong></p>
+
+<p>Um Enigmail zu Thunderbird hinzuzufügen, geht man in Thunderbird auf <em>Extras -> Addons</em>. Unter <em>Addons Suchen</em> sollte Enigmail schon bei den Empfohlenen Addons aufgelistet sein. Wenn nicht, findet man es durch eingeben von &#8220;Enigmail&#8221; in die Suchzeile. Ein klick auf <em>Zu Thunderbird hinzufügen </em>und danach auf <em>Jetzt installieren</em> installiert Enigmail und nach einem Neustart von Thunderbird ist das Plugin betriebsbereit.</p>
+
+<p>Jetzt muss Enigmail nur noch eingerichtet werden. Das ist mit dem OpenPGP Assistenten schnell erledigt. Dazu geht man in Thunderbird auf <em>OpenPGP -> OpenPGP-Assistent</em> und klickt sich durch. Bei <em>Schlüsselauswahl</em> wählt man den zuvor erstellten Schlüssel aus.</p>
+
+<p>Das war&#8217;s auch schon. Jetzt steht einer Nutzung von PGP nichts mehr im Wege.</p>
+
+<p> </p>
+
+<p><strong>Schlüssel verwalten:</strong></p>
+
+<p>Um jemanden zu Ermöglichen einem Verschlüsselte Emails zu verschicken oder seine Unterschrift zu überprüfen, muss man diesem jemanden seinen öffentlichen Schlüssel zukommen lassen. Dafür geht man in Thunderbird auf <em>OpenPGP -> Schlüssel Verwalten</em>, macht ein Häckchen bei <em>Standardmäßig alle Schlüssel anzeigen</em> und wählt seinen Schlüssel aus. Nun gibt es verschiedene Möglichkeiten:</p>
+
+<p><strong>Öffentlichen Schlüssel exportieren:</strong></p>
+
+<p>Eine Möglichkeit ist der direkte Weg. Den öffentlichen Schlüssel in eine Datei exportieren und beispielsweise per Email an den Empfänger schicken. Dafür geht man auf <em>Datei -> </em><em>Exportieren -> Nur öffentliche</em><em> Schlüssel exportieren </em>und speichert den Schlüssel an einem geeigneten Ort.</p>
+
+<p>Es geht auch einfacher: Über <em>Datei -> Öffentliche Schlüssel per Email senden</em>.</p>
+
+<p><strong>Öffentlichen Schlüssel auf einen Schlüssel-Server hochladen:</strong></p>
+
+<p>Diese Möglichkeit hat den Vorteil, dass man nicht bei jedem neuen Empfänger die oben genannte Prozedur wiederholen muss. Der Öffentliche Schlüssel wird einfach auf einen (oder mehrere) Keyserver hochgeladen, und der Empfänger lädt den Schlüssel vom Server herunter. Dafür geht man auf <em>Schlüssel-Server -> Schlüssel hochladen, </em>wählt einen Schlüssel-Server aus und drückt auf <em>Ok</em></p>
+
+<p> </p>
+
+<p><strong>Schlüssel importieren:</strong></p>
+
+<p><strong> </strong>Will man einen Schlüssel importieren und dieser liegt in Dateiform bereit, geht man in der Schlüsselverwaltung auf <em>Datei -> Importieren</em> und wählt die Datei aus.</p>
+
+<p>Man kann einen Schlüssel auch über einen Schlüssel-Server importieren. Dafür geht man auf <em>Schlüsselserver -> Schlüssel suchen</em> und gibt die Email Addresse oder die Schlüssel-ID des gewünschten Schlüssels ein.</p>
+
+<p> </p>
+
+<p><strong>Schlüssel unterschreiben:</strong></p>
+
+<p>Hat man einmal einen Schlüssel importiert, sollte man diesen Unterschreiben. Allerdings nur, wenn man ganz sicher ist, dass der importierte Schlüssel von dem Absender stammt. Um das zu überprüfen, vergleicht man den Fingerabdruck des importierten Schlüssels mit dem, den der Absender einem am besten persönlich oder per Telefon mitteilt. Hier sollte kein zweifel bestehen, dass einem der Absender selbst den Fingerabdruck übergeben hat.</p>
+
+<p>Der Fingerabdruck des Importierten Schlüssels lässt sich überprüfen, indem man in der Schlüsselverwaltung den Schlüssel auswählt und auf <em>Bearbeiten -> Unterschreiben</em> geht. Stimmt der Fingerabdruck mit dem des vom Absender übermittelten überein, kann man den Schlüssel unterschreiben.</p>
+
+<p><strong>Nachrichten Verschlüsseln:</strong></p>
+
+<p>Um eine Nachricht zu verschlüsseln drückt man im Verfassen Fenster auf <em>OpenPGP </em>und macht ein Häckchen bei <em>Nachricht Verschlüsseln.</em></p>
+
+<p>Analog funktioniert es mit dem Unterschreiben.</p>
+
+<p> </p>
+
+<p><strong>PGP Ausprobieren:</strong></p>
+
+<p>Wer PGP mal ausprobieren will, aber noch keinen Kontakt hat, der PGP nutzt, kann mir gerne eine Email schreiben. <a href="http://jokke.bplaced.net/wp-content/uploads/2011/04/jokkePub.asc">Hier ist mein öffentlicher Schlüssel</a><a href="http://jokke.bplaced.net/wp-content/uploads/2011/04/jokkePub.asc"></a>. Meine Email-Adresse ist dem Schlüssel zu entnehmen.<!--:--></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Joakim Reinert</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-04T00:00:00+02:00" pubdate data-updated="true">04/04/11</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/sicherheit-und-datenschutz/'>Sicherheit und Datenschutz</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird/" data-via="digitadventures" data-counturl="http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/04/05/cooler-videoplayer/" title="next Post: Cooler Videoplayer">Cooler Videoplayer &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/">Evolution und mehrere Benutzer für einen PGP-Schlüssel</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/">Google Analytics datenschutzkonform nutzen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/30/ein-preiswerter-heimkino-pc/">Ein preiswerter Heimkino-PC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden/">GrooveLoader - Kostenlos Musik hören und downloaden</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/07/keepass-vorgestellt/">KeePass vorgestellt</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/digital-adventures">@digital-adventures</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'digital-adventures',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("digitadventures", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/digitadventures" class="twitter-follow-button" data-show-count="false">Follow @digitadventures</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Joakim Reinert -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'digital-adventures';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird/';
+        var disqus_url = 'http://digital-adventures.github.com/blog/2011/04/04/pgp-fur-emails-warum-man-es-nutzen-sollte-und-wie-es-eingerichtet-wird/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

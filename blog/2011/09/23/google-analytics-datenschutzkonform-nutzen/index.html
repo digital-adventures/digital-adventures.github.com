@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Google Analytics datenschutzkonform nutzen - Digital Adventures</title>
+  <meta name="author" content="Joakim Reinert">
+
+  
+  <meta name="description" content="Google Analytics (im Folgenden als Analytics abgekürzt) ist für Webmaster eine tolle Sache. Der Service von Google erstellt Statistiken über die &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://digital-adventures.github.com/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Digital Adventures" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Digital Adventures</a></h1>
+  
+    <h2>Alles rund um Software, Hardware, dies und das</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="http://eepurl.com/fRMf5" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:digital-adventures.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Google Analytics datenschutzkonform nutzen</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-23T00:00:00+02:00" pubdate data-updated="true">09/23/11</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Google Analytics (im Folgenden als Analytics abgekürzt) ist für Webmaster eine tolle Sache. Der Service von Google erstellt Statistiken über die Nutzer einer Webseite. Diese Statistiken können dem Webmaster helfen seine Seite zu optimieren und für seine Zielgruppe interessanter zu gestalten.</p>
+
+<p>Die Datenschutzrichtlinien in den USA sind leider nicht so streng wie in Deutschland und als amerikanisches Unternehmen richtet sich Google an diese. Deshalb ist Analytics schon länger ein Dorn im Auge der Deutschen Datenschutzbeauftragten gewesen.</p>
+
+<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu &#8220;Personenbezogenen Daten&#8221;, denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
+
+<p>Glücklicherweise ist Google vor kurzem auf die Forderungen der Deutschen Datenschutzbeauftragten eingegangen und hat es möglich gemacht Analytics zu nutzen ohne auf Datenschutz zu verzichten.</p>
+
+<!-- more -->
+
+
+<p>Nun ist es nämlich möglich die IP-Adressen der Nutzer zu maskieren. Das heißt das letze Byte der Adresse wird unkenntlich gemacht, also wird aus <code>207.142.131.235</code> z.B. so etwas wie <code>207.142.131.xxx</code>. Damit sind Nutzer nicht mehr identifizierbar. Das Maskieren ist aber standardmäßig <strong>nicht aktiviert</strong> und muss vom Webmaster selbst in den Analytics Code eingebaut werden. Das heißt auf allen Seiten, wo der Code vorkommt muss dieser um eine Funktion erweitert werden.</p>
+
+<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den &#8220;herkömmlichen&#8221; code:</p>
+
+<pre>&lt;script type="text/javascript"&gt;
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+&lt;/script&gt;&lt;script type="text/javascript"&gt;
+    try{
+        var pageTracker = _gat._getTracker("UA-xxxxxx-x");
+        _gat._anonymizeIp();
+        pageTracker._trackPageview();
+    } catch(err) {}
+&lt;/script&gt;</pre>
+
+
+<p>Hier ist die Funktion in Zeile 7.</p>
+
+<p>Und es gibt den neuen &#8220;asynchronen&#8221; code:</p>
+
+<pre>&lt;script type="text/javascript"&gt;
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-xxxxxxxx-x']);
+    _gaq.push(['_gat._anonymizeIp']);
+    _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+&lt;/script&gt;</pre>
+
+
+<p>Hier ist die Funktion in Zeile 4 und wie man sieht, unterscheidet sich der Funktionsaufruf von dem des &#8220;herkömmlichen&#8221; Tracking Codes.</p>
+
+<p>Wer schon vor der IP-Maskierung Analytics genutzt hat, muss die gesammelten Daten löschen. Das geht laut Google nur, indem man das entsprechende Analytics Konto löscht. Hier ist eine Kurzanleitung dazu:</p>
+
+<blockquote>Entfernen Sie vor dem Löschen das Snippet des JavaScript-Codes von Ihren Seiten.
+
+Wählen Sie zum Löschen des Kontos zunächst aus dem Dropdown-Menü &#8220;Mein Analytics-Konto&#8221;, das oben auf jeder Seite in Google Analytics angezeigt wird, das Konto aus. Navigieren Sie anschließend zur Seite Konto- und Datenfreigabeeinstellungen bearbeiten und klicken Sie zum Beenden des Vorgangs auf &#8220;Konto löschen&#8221;</blockquote>
+
+
+<p>Quelle: <a title="http://www.google.com/support/analytics/bin/answer.py?hl=de&answer=55551" href="http://www.google.com/support/analytics/bin/answer.py?hl=de&answer=55551" target="_blank">http://www.google.com/support/analytics/bin/answer.py?hl=de&amp;answer=55551</a></p>
+
+<p>Zusätzlich muss folgendes Formular ausgefüllt und mit einem frankierten Rücksendeumschlag an Google in Hamburg geschickt werden. <a title="Vertrag zur Auftragsdatenverwaltung" href="www.google.de/intl/de/analytics/tos.pdf" target="_blank">Hier der Link zum Formular</a>. Bei dem Formular handelt es sich um einen sogenannten &#8220;Vertrag zur Auftragsdatenverwaltung&#8221;. Dieser Vertrag ist nötig, denn immer wenn ein Webseitenbetreiber personenbezogene Daten an Dritte (in diesem Fall Google Analytics) überlässt, müssen die Nutzer der Webseite dem zugestimmt haben. Es sei denn, man hat einen &#8220;Vertrag zur Auftragsdatenverwaltung&#8221; mit dem Empfänger der Daten (in diesem Fall wieder Google Analytics) abgeschlossen. Dann braucht man keine Einwilligung. In dem Vertrag ist u.a. erklärt, wie die Daten der Nutzer gesichert werden.</p>
+
+<p>Man braucht zwar keine Einwilligung, doch die Nutzer müssen über Zweck, Art und Umfang der Datenerhebung informiert werden. Dies geschieht zum Beispiel über eine Datenschutzerklärung, wie sie in meinem <a title="Impressum" href="http://digital-adventures.de/blog/impressum/" target="_blank">Impressum</a> zu sehen ist.</p>
+
+<p>Den Nutzern muss außerdem eine Möglichkeit geboten werden der Datenerhebung zu widersprechen. Dies ist mit Hilfe eines Browser-Add-Ons möglich. Folgende Browser werden zur Zeit unterstützt: Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, Apple Safari und Opera. <a title="Browser-Add-On" href="http://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">Hier der Link zum Plugin</a>.</p>
+
+<p>Sind all diese Maßnahmen erfolgt, kann man Google Analytics guten Gewissens nutzen. Durch ein kleinwenig Frikelei ist es also doch möglich.</p>
+
+<p>Tipp: Wer Analytics in seinen Blog einbinden will, sollte sich die Plugins <a title="Google Analytics Tracking Code Embeder" href="http://wordpress.org/extend/plugins/google-analytics-tracking-code-embeder/" target="_blank">Google Analytics Tracking Code Embeder</a> und <a title="Analytics360°" href="http://wordpress.org/extend/plugins/analytics360/" target="_blank">Analytics360°</a> anschauen. Google Analytics Tracking Code Embeder ist das einzige Plugin, was ich gefunden habe, wo man den Tracking Code modifizieren kann. Das ist ein Muss, denn sonst kann man die Funktion für die IP-Maskierung nicht einfügen. Analytics360° erlaubt es die Google Analytics Statistiken bequem direkt im Wordpress Dashboard anzuzeigen.<!--:--><!--:en-->Google Analytics (im Folgenden als Analytics abgekürzt) ist für Webmaster eine tolle Sache. Der Service von Google erstellt Statistiken über die Nutzer einer Webseite. Diese Statistiken können dem Webmaster helfen seine Seite zu optimieren und für seine Zielgruppe interessanter zu gestalten.</p>
+
+<p>Die Datenschutzrichtlinien in den USA sind leider nicht so streng, wie in Deutschland und als amerikanisches Unternehmen richtet sich Google an diese. Deshalb ist Analytics schon länger ein Dorn im Auge der Deutschen Datenschutzbeauftragten gewesen.</p>
+
+<p>Vor allem die Speicherung der IP-Adressen von Benutzern war ein Aspekt, der die Nutzung von Analytics in Deutschland unter Einhalten der Datenschutzrichtlinien unmöglich gemacht hat. IP-Adressen gehören nämlich laut Telemediengesetz (TMG) zu &#8220;Personenbezogenen Daten&#8221;, denn durch die IP-Adresse kann eine Person eindeutig identifiziert werden. Diese Daten dürfen aber nicht ohne die bewusste, eindeutige Einwilligung des Nutzers gespeichert werden.</p>
+
+<p>Glücklicherweise ist Google vor kurzem auf die Forderungen der Deutschen Datenschutzbeauftragten eingegangen und hat es möglich gemacht Analytics zu nutzen ohne auf Datenschutz zu verzichten.</p>
+
+<!--:-->
+
+
+<!--more-->
+
+
+<!--:en-->
+
+
+<p>Nun ist es nämlich möglich die IP-Adressen der Nutzer zu maskieren. Das heißt das letze Byte der Adresse wird unkenntlich gemacht, also wird aus <code>207.142.131.235</code> z.B. <code>207.142.131.xxx</code>. Damit sind Nutzer nicht mehr identifizierbar. Das Maskieren ist aber standardmäßig <strong>nicht aktiviert</strong> und muss vom Webmaster selbst in den Analytics Code eingebaut werden. Das heißt auf allen Seiten, wo der Code vorkommt muss dieser um eine Funktion erweitert werden.</p>
+
+<p>Die Funktion ist abhängig vom typ des Codes. Es gibt den &#8220;herkömmlichen&#8221; code:</p>
+
+<!--:-->
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Joakim Reinert</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-23T00:00:00+02:00" pubdate data-updated="true">09/23/11</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/sicherheit-und-datenschutz/'>Sicherheit und Datenschutz</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://digital-adventures.github.com/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/" data-via="digitadventures" data-counturl="http://digital-adventures.github.com/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/08/30/ein-preiswerter-heimkino-pc/" title="Previous Post: Ein preiswerter Heimkino-PC">&laquo; Ein preiswerter Heimkino-PC</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/" title="next Post: Evolution und mehrere Benutzer für einen PGP-Schlüssel">Evolution und mehrere Benutzer für einen PGP-Schlüssel &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/11/14/evolution-und-mehrere-benutzer-fur-einen-pgp-schlussel/">Evolution und mehrere Benutzer für einen PGP-Schlüssel</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/">Google Analytics datenschutzkonform nutzen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/30/ein-preiswerter-heimkino-pc/">Ein preiswerter Heimkino-PC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/18/grooveloader-kostenlos-musik-horen-und-downloaden/">GrooveLoader - Kostenlos Musik hören und downloaden</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/07/keepass-vorgestellt/">KeePass vorgestellt</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/digital-adventures">@digital-adventures</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'digital-adventures',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("digitadventures", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/digitadventures" class="twitter-follow-button" data-show-count="false">Follow @digitadventures</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Joakim Reinert -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'digital-adventures';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://digital-adventures.github.com/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/';
+        var disqus_url = 'http://digital-adventures.github.com/blog/2011/09/23/google-analytics-datenschutzkonform-nutzen/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
